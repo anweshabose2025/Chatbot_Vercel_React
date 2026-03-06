@@ -79,7 +79,8 @@ export async function POST(req: Request) {
 
   if (decision.tool === "news_qa") {
   //const res = await fetch("http://localhost:3000/api/mcp",
-  const res = await fetch(`${process.env.VERCEL_URL}/api/mcp`,
+  //const res = await fetch(`${process.env.VERCEL_URL}/api/mcp`,
+  const res = await fetch(`https://news-vercel-react-7a6giopj4-anweshabose2025s-projects.vercel.app/api/mcp`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
